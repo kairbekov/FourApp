@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="kz.strixit.abuka.fourapp.RankingFragment"
+    android:background="@color/colorBackgraoundMainMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:id="@+id/globalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/Global"
+                android:textColor="@color/white"
+                android:background="@drawable/keyboard_button"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/countryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/Countries"
+                android:textColor="@color/white"
+                android:background="@drawable/keyboard_button"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

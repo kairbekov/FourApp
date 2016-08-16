@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgraoundMainMenu"
+    tools:context="kz.strixit.abuka.fourapp.GameActivity"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_margin="4dp">
+
+            <Button
+                android:id="@+id/backArrowButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textSize="30dp"
+                android:background="@drawable/ic_arrow_back_white_36dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/circular_progress_bar"/>
+                <TextView
+                    android:id="@+id/stepsTextView"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:textSize="26dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/tutorialButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/info_item"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+
+        <View android:background="#ffffff"
+        android:layout_width = "match_parent"
+        android:layout_height="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/find_word"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/letter1"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="4dp"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:textColor="@color/purple"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/letter1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/letter2"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="4dp"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:textColor="@color/green"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/letter2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/letter3"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="4dp"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/letter3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/letter4"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="4dp"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:textColor="@color/yellow"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/letter4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/matchingNum"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="60dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:id="@+id/matchingText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="18dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_height="2dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp">
+        </android.support.v4.view.ViewPager>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:radius="6dp"
+            app:fillColor="@color/white"
+            app:pageColor="@color/colorBackgraoundMainMenu"
+            app:strokeColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
